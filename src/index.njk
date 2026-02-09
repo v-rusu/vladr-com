@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="hero">
+  <h1>Hey, I'm Vlad.</h1>
+  <p>I'm a programmer with an entrepreneurial spirit. I recently started focusing on AI, after a decade of mobile and backend development (is that what we call fullstack?).</p>
+
+  <p>These days I'm spending most of my time working on <a href="https://mobileinsight.com">VIBA</a>, developing an AI virtual brand ambassador.</p>
+
+  <p>Previously I founded an app development agency, separately I've built and launched <a href="https://promocard.co">promocard</a>, <a href="https://apps.apple.com/us/app/popshot-ai-photo-editor/id6754027503">popshot</a>, and <a href="tuningfork.co">tuningfork</a>.</p>
+
+  <p>I sometimes play guitar.</p>
+</section>
+
+<section class="home-section">
+  <h2>Writing</h2>
+  <p class="section-subtitle">What I'm working on and experimenting with.</p>
+  <ul class="item-list">
+    {%- for post in collections.post | reverse %}
+    <li>
+      <a class="item-link" href="{{ post.url }}">
+        <div>
+          <h3>{{ post.data.title }}</h3>
+          {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+        </div>
+        <span class="chevron" aria-hidden="true">&#8250;</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
