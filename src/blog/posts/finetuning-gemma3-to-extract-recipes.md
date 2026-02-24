@@ -11,6 +11,13 @@ tags: post
 # {{ title }}
 <time datetime="{{ date | dateFormat('iso') }}">{{ date | dateFormat }}</time>
 
+<figure>
+  <a href="/images/eval_comparison.png" target="_blank" rel="noopener">
+    <img src="/images/eval_comparison.png" alt="Eval results comparing Overall Vibes Score and Structural Validity across all fine-tuning configurations" />
+  </a>
+  <figcaption>graph courtesy of claude code</figcaption>
+</figure>
+
 The conclusion first, so you don't have to read the whole thing:
 
 Huge models have spoiled us in all the wrong ways. For example, you can paste any garbage into GPT 5.2, or Sonnet 4.5, and they will happily and correctly extract whatever you need from it. With small models, the context becomes super-dooper important.

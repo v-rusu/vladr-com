@@ -248,6 +248,13 @@ article time {
   margin-bottom: 2rem;
 }
 
+article figcaption {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+}
+
 article img {
   max-width: 100%;
   border-radius: 6px;
